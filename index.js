@@ -12,7 +12,7 @@ const app = express()
 const port = process.env.PORT
 
 app.use(cors({
-    origin: "http://localhost:5173", // Chỉ cho phép domain frontend
+    origin: "https://danfitness-lich-tap.vercel.app", // Chỉ cho phép domain frontend
     credentials: true, // Cho phép gửi cookie qua CORS
   }))
 
