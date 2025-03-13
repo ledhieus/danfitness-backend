@@ -38,7 +38,7 @@ module.exports.login = async (req, res) => {
     res.cookie("sessionToken", sessionToken, {
       httpOnly: true,
       secure: true, // Đảm bảo chỉ gửi cookie qua HTTPS
-      sameSite: "Strict",
+      sameSite: "None",
     });
 
     res.json({ code: 200, message: "Đăng nhập thành công!" });

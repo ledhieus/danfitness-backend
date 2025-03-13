@@ -16,6 +16,11 @@ app.use(cors({
     credentials: true, // Cho phép gửi cookie qua CORS
   }))
 
+  // app.use(cors({
+  //   origin: "http://localhost:5173", // Chỉ cho phép domain frontend
+  //   credentials: true, // Cho phép gửi cookie qua CORS
+  // }))
+
 
 database.connect()
 
